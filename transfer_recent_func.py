@@ -79,13 +79,16 @@ def run_file_transfer(self):
                 dest_file = dest + '\\' + f
                 shutil.copy(src_file, dest_file)
         messagebox.showinfo("File Transfer Complete","Success")
-    else
+    else:
         if src == dest:
             # Error message if the source and destination directories are the same
             messagebox.showerror("Invalid Entry", "Source and destination folders must be different")
         else:
             # Error message if the directory does not exist
             messagebox.showerror("Invalid directory", "Invalid directory")
+
+
+
 
 if __name__ == "__main__":
     pass
